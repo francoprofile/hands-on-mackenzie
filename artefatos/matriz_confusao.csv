@@ -1,0 +1,7 @@
+"modelo","real","previsto_grave","previsto_nao_grave"
+"xgboost","Grave",26620,3804
+"xgboost","Nao_grave",2979,22680
+"elasticnet","Grave",25415,5009
+"elasticnet","Nao_grave",3288,22371
+"random_forest","Grave",26197,4227
+"random_forest","Nao_grave",2653,23006

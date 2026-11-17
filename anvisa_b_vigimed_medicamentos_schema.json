@@ -1,0 +1,281 @@
+{
+  "tabela": "anvisa.b_vigimed_medicamentos",
+  "dicionario_de_dados": [
+    {
+      "coluna": "IDENTIFICACAO_NOTIFICACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 388710,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "RELACAO_MEDICAMENTO_EVENTO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 5,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "NOME_MEDICAMENTO_WHODRUG",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 14497,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "PRINCIPIOS_ATIVOS_WHODRUG",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 5134,
+      "quantidade_nulos": 10
+    },
+    {
+      "coluna": "CODIGO_ATC",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1828,
+      "quantidade_nulos": 10
+    },
+    {
+      "coluna": "DETENTOR_REGISTRO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 13359,
+      "quantidade_nulos": 1
+    },
+    {
+      "coluna": "CONCENTRACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 16086,
+      "quantidade_nulos": 3
+    },
+    {
+      "coluna": "COMPONENTE_SUSPEITO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 10,
+      "quantidade_nulos": 3
+    },
+    {
+      "coluna": "ACAO_ADOTADA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 7,
+      "quantidade_nulos": 3
+    },
+    {
+      "coluna": "PROBLEMAS_ADICIONAIS_RELCIONADOS_MEDICAMENTO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 133,
+      "quantidade_nulos": 355
+    },
+    {
+      "coluna": "INDICACAO_MEDDRA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 14092,
+      "quantidade_nulos": 243
+    },
+    {
+      "coluna": "INDICACAO_RELATADA_NOTIFICADOR_INICIAL",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 78112,
+      "quantidade_nulos": 137
+    },
+    {
+      "coluna": "DOSE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 12536,
+      "quantidade_nulos": 226
+    },
+    {
+      "coluna": "FREQUENCIA_DOSE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1817,
+      "quantidade_nulos": 10
+    },
+    {
+      "coluna": "POSOLOGIA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 172785,
+      "quantidade_nulos": 10
+    },
+    {
+      "coluna": "DURACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1686,
+      "quantidade_nulos": 303
+    },
+    {
+      "coluna": "INICIO_ADMINISTRACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 6091,
+      "quantidade_nulos": 16
+    },
+    {
+      "coluna": "FIM_ADMINISTRACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4309,
+      "quantidade_nulos": 16
+    },
+    {
+      "coluna": "FORMA_FARMACEUTICA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 5235,
+      "quantidade_nulos": 16
+    },
+    {
+      "coluna": "VIA_ADMINISTRACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2429,
+      "quantidade_nulos": 16
+    },
+    {
+      "coluna": "VIA_ADMINISTRACAO_MAE_PAI",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 17,
+      "quantidade_nulos": 16
+    },
+    {
+      "coluna": "NUMELO_LOTE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 92411,
+      "quantidade_nulos": 17
+    },
+    {
+      "coluna": "_data_ingestao",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "_arquivo_origem",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    }
+  ],
+  "amostra_dados": [
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000001",
+      "RELACAO_MEDICAMENTO_EVENTO": "Suspeito",
+      "NOME_MEDICAMENTO_WHODRUG": "Cefepima",
+      "PRINCIPIOS_ATIVOS_WHODRUG": "Cloridrato de cefepima",
+      "CODIGO_ATC": "J01DE",
+      "DETENTOR_REGISTRO": "None",
+      "CONCENTRACAO": "None",
+      "COMPONENTE_SUSPEITO": "Princípio Ativo",
+      "ACAO_ADOTADA": "None",
+      "PROBLEMAS_ADICIONAIS_RELCIONADOS_MEDICAMENTO": "Erro de Medicação",
+      "INDICACAO_MEDDRA": "Infecção SOE",
+      "INDICACAO_RELATADA_NOTIFICADOR_INICIAL": "Outras infecções bacterianas de localização não especificada",
+      "DOSE": "1 gram (g)",
+      "FREQUENCIA_DOSE": "2 ",
+      "POSOLOGIA": "None",
+      "DURACAO": null,
+      "INICIO_ADMINISTRACAO": "20181111",
+      "FIM_ADMINISTRACAO": "None",
+      "FORMA_FARMACEUTICA": "None",
+      "VIA_ADMINISTRACAO": "None",
+      "VIA_ADMINISTRACAO_MAE_PAI": "None",
+      "NUMELO_LOTE": "008459 ",
+      "_data_ingestao": "2026-11-15 14:53:47.408956",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Medicamentos.csv"
+    },
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000002",
+      "RELACAO_MEDICAMENTO_EVENTO": "Suspeito",
+      "NOME_MEDICAMENTO_WHODRUG": "Clavulin",
+      "PRINCIPIOS_ATIVOS_WHODRUG": "Amoxicilina sódica|Clavulanato de potássio",
+      "CODIGO_ATC": "J01CR",
+      "DETENTOR_REGISTRO": "None",
+      "CONCENTRACAO": "None",
+      "COMPONENTE_SUSPEITO": "Princípio Ativo",
+      "ACAO_ADOTADA": "None",
+      "PROBLEMAS_ADICIONAIS_RELCIONADOS_MEDICAMENTO": null,
+      "INDICACAO_MEDDRA": null,
+      "INDICACAO_RELATADA_NOTIFICADOR_INICIAL": null,
+      "DOSE": null,
+      "FREQUENCIA_DOSE": " ",
+      "POSOLOGIA": "None",
+      "DURACAO": null,
+      "INICIO_ADMINISTRACAO": "20181010",
+      "FIM_ADMINISTRACAO": "None",
+      "FORMA_FARMACEUTICA": "None",
+      "VIA_ADMINISTRACAO": "None",
+      "VIA_ADMINISTRACAO_MAE_PAI": "None",
+      "NUMELO_LOTE": "None",
+      "_data_ingestao": "2026-11-15 14:53:47.408956",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Medicamentos.csv"
+    },
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000002",
+      "RELACAO_MEDICAMENTO_EVENTO": "Suspeito",
+      "NOME_MEDICAMENTO_WHODRUG": "Cipro",
+      "PRINCIPIOS_ATIVOS_WHODRUG": "Cloridrato de ciprofloxacino",
+      "CODIGO_ATC": "J01MA|S01AE|S03AA",
+      "DETENTOR_REGISTRO": "None",
+      "CONCENTRACAO": "None",
+      "COMPONENTE_SUSPEITO": "None",
+      "ACAO_ADOTADA": "None",
+      "PROBLEMAS_ADICIONAIS_RELCIONADOS_MEDICAMENTO": null,
+      "INDICACAO_MEDDRA": null,
+      "INDICACAO_RELATADA_NOTIFICADOR_INICIAL": null,
+      "DOSE": null,
+      "FREQUENCIA_DOSE": " ",
+      "POSOLOGIA": "None",
+      "DURACAO": "2 dia",
+      "INICIO_ADMINISTRACAO": "20181018",
+      "FIM_ADMINISTRACAO": "None",
+      "FORMA_FARMACEUTICA": "None",
+      "VIA_ADMINISTRACAO": "None",
+      "VIA_ADMINISTRACAO_MAE_PAI": "None",
+      "NUMELO_LOTE": "None",
+      "_data_ingestao": "2026-11-15 14:53:47.408956",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Medicamentos.csv"
+    },
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000003",
+      "RELACAO_MEDICAMENTO_EVENTO": "Concomitante",
+      "NOME_MEDICAMENTO_WHODRUG": "Clexane",
+      "PRINCIPIOS_ATIVOS_WHODRUG": "Enoxaparina sódica",
+      "CODIGO_ATC": "B01AB",
+      "DETENTOR_REGISTRO": "None",
+      "CONCENTRACAO": "None",
+      "COMPONENTE_SUSPEITO": "None",
+      "ACAO_ADOTADA": "None",
+      "PROBLEMAS_ADICIONAIS_RELCIONADOS_MEDICAMENTO": null,
+      "INDICACAO_MEDDRA": null,
+      "INDICACAO_RELATADA_NOTIFICADOR_INICIAL": null,
+      "DOSE": null,
+      "FREQUENCIA_DOSE": " ",
+      "POSOLOGIA": "None",
+      "DURACAO": null,
+      "INICIO_ADMINISTRACAO": "None",
+      "FIM_ADMINISTRACAO": "None",
+      "FORMA_FARMACEUTICA": "None",
+      "VIA_ADMINISTRACAO": "None",
+      "VIA_ADMINISTRACAO_MAE_PAI": "None",
+      "NUMELO_LOTE": "None",
+      "_data_ingestao": "2026-11-15 14:53:47.408956",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Medicamentos.csv"
+    },
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000003",
+      "RELACAO_MEDICAMENTO_EVENTO": "None",
+      "NOME_MEDICAMENTO_WHODRUG": "Brilinta",
+      "PRINCIPIOS_ATIVOS_WHODRUG": "Ticagrelor",
+      "CODIGO_ATC": "B01AC",
+      "DETENTOR_REGISTRO": "None",
+      "CONCENTRACAO": "None",
+      "COMPONENTE_SUSPEITO": "None",
+      "ACAO_ADOTADA": "None",
+      "PROBLEMAS_ADICIONAIS_RELCIONADOS_MEDICAMENTO": null,
+      "INDICACAO_MEDDRA": null,
+      "INDICACAO_RELATADA_NOTIFICADOR_INICIAL": null,
+      "DOSE": null,
+      "FREQUENCIA_DOSE": " ",
+      "POSOLOGIA": "None",
+      "DURACAO": null,
+      "INICIO_ADMINISTRACAO": "None",
+      "FIM_ADMINISTRACAO": "None",
+      "FORMA_FARMACEUTICA": "None",
+      "VIA_ADMINISTRACAO": "None",
+      "VIA_ADMINISTRACAO_MAE_PAI": "None",
+      "NUMELO_LOTE": "None",
+      "_data_ingestao": "2026-11-15 14:53:47.408956",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Medicamentos.csv"
+    }
+  ]
+}

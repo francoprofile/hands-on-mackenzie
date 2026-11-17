@@ -1,0 +1,259 @@
+{
+  "tabela": "anvisa.s_vigimed_notificacoes",
+  "dicionario_de_dados": [
+    {
+      "coluna": "id_notificacao",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 384839,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "uf",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 27,
+      "quantidade_nulos": 85429
+    },
+    {
+      "coluna": "tipo_entrada_vigimed",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "recebido_de",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 6,
+      "quantidade_nulos": 66515
+    },
+    {
+      "coluna": "tipo_notificacao",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "notificacao_parent_child",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 362010
+    },
+    {
+      "coluna": "data_inclusao_sistema",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 2674,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "data_ultima_atualizacao",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 2684,
+      "quantidade_nulos": 136
+    },
+    {
+      "coluna": "data_notificacao",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 3335,
+      "quantidade_nulos": 176250
+    },
+    {
+      "coluna": "data_nascimento",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 32461,
+      "quantidade_nulos": 95593
+    },
+    {
+      "coluna": "idade_momento_reacao",
+      "tipo_de_dado": "decimal(6,2)",
+      "valores_distintos_aprox": 114,
+      "quantidade_nulos": 41889
+    },
+    {
+      "coluna": "grupo_idade",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 7,
+      "quantidade_nulos": 208277
+    },
+    {
+      "coluna": "idade_gestacional_momento_reacao",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 53,
+      "quantidade_nulos": 362865
+    },
+    {
+      "coluna": "sexo",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "ind_gestante",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "ind_lactante",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "peso_kg",
+      "tipo_de_dado": "decimal(7,2)",
+      "valores_distintos_aprox": 262,
+      "quantidade_nulos": 221140
+    },
+    {
+      "coluna": "altura_cm",
+      "tipo_de_dado": "decimal(6,1)",
+      "valores_distintos_aprox": 190,
+      "quantidade_nulos": 283674
+    },
+    {
+      "coluna": "ind_grave",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 85018
+    },
+    {
+      "coluna": "notificador",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 5,
+      "quantidade_nulos": 25010
+    },
+    {
+      "coluna": "dt_ingestao_bronze",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "dt_processamento_silver",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    }
+  ],
+  "amostra_dados": [
+    {
+      "id_notificacao": "BR-ANVISA-300000001",
+      "uf": null,
+      "tipo_entrada_vigimed": "Serviços de Saúde",
+      "recebido_de": "Centro Regional de Farmacovigilância",
+      "tipo_notificacao": "Notificação espontânea",
+      "notificacao_parent_child": null,
+      "data_inclusao_sistema": "2018-11-30",
+      "data_ultima_atualizacao": "2018-11-30",
+      "data_notificacao": "2018-11-12",
+      "data_nascimento": null,
+      "idade_momento_reacao": "34.00",
+      "grupo_idade": null,
+      "idade_gestacional_momento_reacao": null,
+      "sexo": "Feminino",
+      "ind_gestante": false,
+      "ind_lactante": false,
+      "peso_kg": null,
+      "altura_cm": null,
+      "ind_grave": false,
+      "notificador": "Outro profissional de saúde",
+      "dt_ingestao_bronze": "2026-11-15 14:54:37.146193",
+      "dt_processamento_silver": "2026-11-15 15:35:47.676269"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300000002",
+      "uf": null,
+      "tipo_entrada_vigimed": "Serviços de Saúde",
+      "recebido_de": "Centro Regional de Farmacovigilância",
+      "tipo_notificacao": "Notificação espontânea",
+      "notificacao_parent_child": null,
+      "data_inclusao_sistema": "2018-11-30",
+      "data_ultima_atualizacao": "2018-11-30",
+      "data_notificacao": "2018-11-12",
+      "data_nascimento": null,
+      "idade_momento_reacao": "63.00",
+      "grupo_idade": null,
+      "idade_gestacional_momento_reacao": null,
+      "sexo": "Feminino",
+      "ind_gestante": false,
+      "ind_lactante": false,
+      "peso_kg": null,
+      "altura_cm": null,
+      "ind_grave": true,
+      "notificador": "Outro profissional de saúde",
+      "dt_ingestao_bronze": "2026-11-15 14:54:37.146193",
+      "dt_processamento_silver": "2026-11-15 15:35:47.676269"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300000003",
+      "uf": null,
+      "tipo_entrada_vigimed": "Serviços de Saúde",
+      "recebido_de": "Centro Regional de Farmacovigilância",
+      "tipo_notificacao": "Notificação espontânea",
+      "notificacao_parent_child": null,
+      "data_inclusao_sistema": "2018-11-30",
+      "data_ultima_atualizacao": "2018-11-30",
+      "data_notificacao": "2018-11-01",
+      "data_nascimento": null,
+      "idade_momento_reacao": "79.00",
+      "grupo_idade": null,
+      "idade_gestacional_momento_reacao": null,
+      "sexo": "Feminino",
+      "ind_gestante": false,
+      "ind_lactante": false,
+      "peso_kg": null,
+      "altura_cm": null,
+      "ind_grave": true,
+      "notificador": "Outro profissional de saúde",
+      "dt_ingestao_bronze": "2026-11-15 14:54:37.146193",
+      "dt_processamento_silver": "2026-11-15 15:35:47.676269"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300000004",
+      "uf": null,
+      "tipo_entrada_vigimed": "Serviços de Saúde",
+      "recebido_de": "Centro Regional de Farmacovigilância",
+      "tipo_notificacao": "Notificação espontânea",
+      "notificacao_parent_child": null,
+      "data_inclusao_sistema": "2018-12-01",
+      "data_ultima_atualizacao": "2018-12-01",
+      "data_notificacao": "2018-11-27",
+      "data_nascimento": null,
+      "idade_momento_reacao": "2.00",
+      "grupo_idade": null,
+      "idade_gestacional_momento_reacao": null,
+      "sexo": "Masculino",
+      "ind_gestante": false,
+      "ind_lactante": false,
+      "peso_kg": "16.00",
+      "altura_cm": null,
+      "ind_grave": false,
+      "notificador": "Farmacêutico",
+      "dt_ingestao_bronze": "2026-11-15 14:54:37.146193",
+      "dt_processamento_silver": "2026-11-15 15:35:47.676269"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300000005",
+      "uf": null,
+      "tipo_entrada_vigimed": "Pacientes e Profissionais de Saúde",
+      "recebido_de": "Profissional de Saúde",
+      "tipo_notificacao": "Notificação espontânea",
+      "notificacao_parent_child": null,
+      "data_inclusao_sistema": "2018-12-12",
+      "data_ultima_atualizacao": "2018-12-12",
+      "data_notificacao": "2018-12-12",
+      "data_nascimento": null,
+      "idade_momento_reacao": "10.00",
+      "grupo_idade": null,
+      "idade_gestacional_momento_reacao": null,
+      "sexo": "Feminino",
+      "ind_gestante": false,
+      "ind_lactante": false,
+      "peso_kg": null,
+      "altura_cm": null,
+      "ind_grave": true,
+      "notificador": "Farmacêutico",
+      "dt_ingestao_bronze": "2026-11-15 14:54:37.146193",
+      "dt_processamento_silver": "2026-11-15 15:35:47.676269"
+    }
+  ]
+}

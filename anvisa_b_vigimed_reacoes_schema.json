@@ -1,0 +1,171 @@
+{
+  "tabela": "anvisa.b_vigimed_reacoes",
+  "dicionario_de_dados": [
+    {
+      "coluna": "IDENTIFICACAO_NOTIFICACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 404953,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "REACAO_EVTO_ADVERSO_MEDDRA_LLT",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 19302,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "PT",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 9908,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "HLT",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1325,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "HLGT",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 330,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "SOC",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 29,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "DATA_INICIO_HORA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 35476,
+      "quantidade_nulos": 34
+    },
+    {
+      "coluna": "DATA_FINAL_HORA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 28971,
+      "quantidade_nulos": 192
+    },
+    {
+      "coluna": "DURACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1115,
+      "quantidade_nulos": 303
+    },
+    {
+      "coluna": "GRAVE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 3,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "GRAVIDADE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 57,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "DESFECHO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 7,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "_data_ingestao",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "_arquivo_origem",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    }
+  ],
+  "amostra_dados": [
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000001",
+      "REACAO_EVTO_ADVERSO_MEDDRA_LLT": "Erro de dispensação do medicamento",
+      "PT": "Erro de dispensação do produto",
+      "HLT": "Erros e problemas de dispensação do produto",
+      "HLGT": "Erros de medicação e outros erros e problemas de utilização do produto",
+      "SOC": "Lesões, intoxicações e complicações de procedimentos",
+      "DATA_INICIO_HORA": "20181112",
+      "DATA_FINAL_HORA": "20181112",
+      "DURACAO": null,
+      "GRAVE": "Não",
+      "GRAVIDADE": "None",
+      "DESFECHO": "Desconhecido",
+      "_data_ingestao": "2026-11-15 14:55:28.183086",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Reacoes.csv"
+    },
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000002",
+      "REACAO_EVTO_ADVERSO_MEDDRA_LLT": "Erupção cutânea",
+      "PT": "Erupção cutânea",
+      "HLT": "Erupções cutâneas e exantemas NCO",
+      "HLGT": "Quadros clínicos epidérmicos e dérmicos",
+      "SOC": "Distúrbios dos tecidos cutâneos e subcutâneos",
+      "DATA_INICIO_HORA": "20181020",
+      "DATA_FINAL_HORA": "20181104",
+      "DURACAO": null,
+      "GRAVE": "Sim",
+      "GRAVIDADE": "Outro efeito clinicamente significativo",
+      "DESFECHO": "Recuperado/Resolvido",
+      "_data_ingestao": "2026-11-15 14:55:28.183086",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Reacoes.csv"
+    },
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000003",
+      "REACAO_EVTO_ADVERSO_MEDDRA_LLT": "Reação vasovagal",
+      "PT": "Pré-síncope",
+      "HLT": "Sinais e sintomas neurológicos NCO",
+      "HLGT": "Distúrbios neurológicos NCO",
+      "SOC": "Distúrbios do sistema nervoso",
+      "DATA_INICIO_HORA": "20181101",
+      "DATA_FINAL_HORA": "20181101",
+      "DURACAO": "5 minuto",
+      "GRAVE": "Sim",
+      "GRAVIDADE": "Outro efeito clinicamente significativo",
+      "DESFECHO": "Recuperado/Resolvido",
+      "_data_ingestao": "2026-11-15 14:55:28.183086",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Reacoes.csv"
+    },
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000004",
+      "REACAO_EVTO_ADVERSO_MEDDRA_LLT": "Coceira",
+      "PT": "Prurido",
+      "HLT": "Prurido NCO",
+      "HLGT": "Quadros clínicos epidérmicos e dérmicos",
+      "SOC": "Distúrbios dos tecidos cutâneos e subcutâneos",
+      "DATA_INICIO_HORA": null,
+      "DATA_FINAL_HORA": null,
+      "DURACAO": "3 dia",
+      "GRAVE": "Não",
+      "GRAVIDADE": "None",
+      "DESFECHO": "Recuperado/Resolvido",
+      "_data_ingestao": "2026-11-15 14:55:28.183086",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Reacoes.csv"
+    },
+    {
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300000005",
+      "REACAO_EVTO_ADVERSO_MEDDRA_LLT": "Edema periorbital",
+      "PT": "Edema periorbital",
+      "HLT": "Distúrbios oculares NCO",
+      "HLGT": "Transtornos oculares NCO",
+      "SOC": "Distúrbios oculares",
+      "DATA_INICIO_HORA": "20181122",
+      "DATA_FINAL_HORA": "20181122",
+      "DURACAO": "None",
+      "GRAVE": "Sim",
+      "GRAVIDADE": "Outro efeito clinicamente significativo",
+      "DESFECHO": "Recuperado/Resolvido",
+      "_data_ingestao": "2026-11-15 14:55:28.183086",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Reacoes.csv"
+    }
+  ]
+}

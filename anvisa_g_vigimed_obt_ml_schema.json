@@ -1,0 +1,380 @@
+{
+  "tabela": "anvisa.g_vigimed_obt_ml",
+  "dicionario_de_dados": [
+    {
+      "coluna": "id_notificacao",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 309343,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "ind_grave",
+      "tipo_de_dado": "int",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "origem_ind_grave",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "uf",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 28,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "tipo_entrada_vigimed",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "recebido_de",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 7,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "tipo_notificacao",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "sexo",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "notificador",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 6,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "ind_gestante",
+      "tipo_de_dado": "int",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "ind_lactante",
+      "tipo_de_dado": "int",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "idade_momento_reacao",
+      "tipo_de_dado": "double",
+      "valores_distintos_aprox": 115,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "ano_inclusao_sistema",
+      "tipo_de_dado": "int",
+      "valores_distintos_aprox": 9,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "mes_inclusao_sistema",
+      "tipo_de_dado": "int",
+      "valores_distintos_aprox": 12,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "qtd_reacoes",
+      "tipo_de_dado": "int",
+      "valores_distintos_aprox": 89,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_llt",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 10590,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_pt",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 5950,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_hlt",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1152,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_hlgt",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 326,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_soc",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 29,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "desfecho",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 7,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "qtd_medicamentos",
+      "tipo_de_dado": "int",
+      "valores_distintos_aprox": 58,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "relacao_medicamento_evento",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 5,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "nome_medicamento",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 7945,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "principios_ativos",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 3122,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "codigo_atc",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 756,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "acao_adotada",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 7,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "posologia",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 87332,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "ind_medicamento_no_catalogo",
+      "tipo_de_dado": "int",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "categoria_regulatoria",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 12,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "classe_terapeutica",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 367,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "empresa_detentora_registro",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 315,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "ind_registro_ativo",
+      "tipo_de_dado": "int",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    }
+  ],
+  "amostra_dados": [
+    {
+      "id_notificacao": "BR-ANVISA-300000002",
+      "ind_grave": 1,
+      "origem_ind_grave": "notificacao",
+      "uf": "Nao Informado",
+      "tipo_entrada_vigimed": "Serviços de Saúde",
+      "recebido_de": "Centro Regional de Farmacovigilância",
+      "tipo_notificacao": "Notificação espontânea",
+      "sexo": "Feminino",
+      "notificador": "Outro profissional de saúde",
+      "ind_gestante": 0,
+      "ind_lactante": 0,
+      "idade_momento_reacao": 63.0,
+      "ano_inclusao_sistema": 2018,
+      "mes_inclusao_sistema": 11,
+      "qtd_reacoes": 1,
+      "reacao_llt": "Erupção cutânea",
+      "reacao_pt": "Erupção cutânea",
+      "reacao_hlt": "Erupções cutâneas e exantemas NCO",
+      "reacao_hlgt": "Quadros clínicos epidérmicos e dérmicos",
+      "reacao_soc": "Distúrbios dos tecidos cutâneos e subcutâneos",
+      "desfecho": "Recuperado/Resolvido",
+      "qtd_medicamentos": 2,
+      "relacao_medicamento_evento": "Suspeito",
+      "nome_medicamento": "Cipro",
+      "principios_ativos": "Cloridrato de ciprofloxacino",
+      "codigo_atc": "J01MA",
+      "acao_adotada": "Nao Informado",
+      "posologia": "Nao Informado",
+      "ind_medicamento_no_catalogo": 1,
+      "categoria_regulatoria": "Novo",
+      "classe_terapeutica": "ANTIBIOTICOS SISTEMICOS SIMPLES",
+      "empresa_detentora_registro": "BAYER S.A.",
+      "ind_registro_ativo": 1
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300000004",
+      "ind_grave": 0,
+      "origem_ind_grave": "notificacao",
+      "uf": "Nao Informado",
+      "tipo_entrada_vigimed": "Serviços de Saúde",
+      "recebido_de": "Centro Regional de Farmacovigilância",
+      "tipo_notificacao": "Notificação espontânea",
+      "sexo": "Masculino",
+      "notificador": "Farmacêutico",
+      "ind_gestante": 0,
+      "ind_lactante": 0,
+      "idade_momento_reacao": 2.0,
+      "ano_inclusao_sistema": 2018,
+      "mes_inclusao_sistema": 12,
+      "qtd_reacoes": 1,
+      "reacao_llt": "Coceira",
+      "reacao_pt": "Prurido",
+      "reacao_hlt": "Prurido NCO",
+      "reacao_hlgt": "Quadros clínicos epidérmicos e dérmicos",
+      "reacao_soc": "Distúrbios dos tecidos cutâneos e subcutâneos",
+      "desfecho": "Recuperado/Resolvido",
+      "qtd_medicamentos": 1,
+      "relacao_medicamento_evento": "Suspeito",
+      "nome_medicamento": "Oxacilina",
+      "principios_ativos": "Oxacilina sódica",
+      "codigo_atc": "J01CF",
+      "acao_adotada": "Nao Informado",
+      "posologia": "Nao Informado",
+      "ind_medicamento_no_catalogo": 1,
+      "categoria_regulatoria": "Similar",
+      "classe_terapeutica": "PENICILINAS PENICILINASE-RESISTENTES",
+      "empresa_detentora_registro": "UNIÃO QUÍMICA FARMACÊUTICA NACIONAL S/A",
+      "ind_registro_ativo": 0
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300000008",
+      "ind_grave": 1,
+      "origem_ind_grave": "notificacao",
+      "uf": "Nao Informado",
+      "tipo_entrada_vigimed": "Serviços de Saúde",
+      "recebido_de": "Centro Regional de Farmacovigilância",
+      "tipo_notificacao": "Notificação espontânea",
+      "sexo": "Feminino",
+      "notificador": "Farmacêutico",
+      "ind_gestante": 0,
+      "ind_lactante": 0,
+      "idade_momento_reacao": 66.0,
+      "ano_inclusao_sistema": 2018,
+      "mes_inclusao_sistema": 12,
+      "qtd_reacoes": 1,
+      "reacao_llt": "Flebite",
+      "reacao_pt": "Flebite",
+      "reacao_hlt": "Flebite NCO",
+      "reacao_hlgt": "Infecções e inflamações vasculares",
+      "reacao_soc": "Distúrbios vasculares",
+      "desfecho": "Recuperado/Resolvido",
+      "qtd_medicamentos": 1,
+      "relacao_medicamento_evento": "Suspeito",
+      "nome_medicamento": "Nitroglicerina",
+      "principios_ativos": "Nitroglicerina",
+      "codigo_atc": "C01DA",
+      "acao_adotada": "Nao Informado",
+      "posologia": "Nao Informado",
+      "ind_medicamento_no_catalogo": 1,
+      "categoria_regulatoria": "Similar",
+      "classe_terapeutica": "NITRITOS NITRATOS E SEMELHANTES",
+      "empresa_detentora_registro": "SYNTHELABO ESPASIL QUIMICA E FARMACÊUTICA LTDA",
+      "ind_registro_ativo": 0
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300000011",
+      "ind_grave": 1,
+      "origem_ind_grave": "notificacao",
+      "uf": "Nao Informado",
+      "tipo_entrada_vigimed": "Pacientes e Profissionais de Saúde",
+      "recebido_de": "Profissional de Saúde",
+      "tipo_notificacao": "Notificação espontânea",
+      "sexo": "Masculino",
+      "notificador": "Farmacêutico",
+      "ind_gestante": 0,
+      "ind_lactante": 0,
+      "idade_momento_reacao": 60.0,
+      "ano_inclusao_sistema": 2018,
+      "mes_inclusao_sistema": 12,
+      "qtd_reacoes": 3,
+      "reacao_llt": "Hipertensão",
+      "reacao_pt": "Hipertensão",
+      "reacao_hlt": "Distúrbios vasculares hipertensivos NCO",
+      "reacao_hlgt": "Distúrbios vasculares hipertensivos",
+      "reacao_soc": "Distúrbios vasculares",
+      "desfecho": "Desconhecido",
+      "qtd_medicamentos": 1,
+      "relacao_medicamento_evento": "Suspeito",
+      "nome_medicamento": "Dexa-Citoneurin",
+      "principios_ativos": "Cianocobalamina | Dexametasona | Cloridrato de piridoxina | Cloridrato de tiamina",
+      "codigo_atc": "H02BX",
+      "acao_adotada": "Retirada do medicamento",
+      "posologia": "Nao Informado",
+      "ind_medicamento_no_catalogo": 0,
+      "categoria_regulatoria": "Nao Informado",
+      "classe_terapeutica": "Nao Informado",
+      "empresa_detentora_registro": "Nao Informado",
+      "ind_registro_ativo": 0
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300000020",
+      "ind_grave": 1,
+      "origem_ind_grave": "notificacao",
+      "uf": "Nao Informado",
+      "tipo_entrada_vigimed": "Pacientes e Profissionais de Saúde",
+      "recebido_de": "Profissional de Saúde",
+      "tipo_notificacao": "Notificação espontânea",
+      "sexo": "Feminino",
+      "notificador": "Farmacêutico",
+      "ind_gestante": 0,
+      "ind_lactante": 0,
+      "idade_momento_reacao": 59.0,
+      "ano_inclusao_sistema": 2018,
+      "mes_inclusao_sistema": 12,
+      "qtd_reacoes": 4,
+      "reacao_llt": "Eritema",
+      "reacao_pt": "Eritema",
+      "reacao_hlt": "Eritemas",
+      "reacao_hlgt": "Quadros clínicos epidérmicos e dérmicos",
+      "reacao_soc": "Distúrbios dos tecidos cutâneos e subcutâneos",
+      "desfecho": "Recuperado/Resolvido",
+      "qtd_medicamentos": 1,
+      "relacao_medicamento_evento": "Suspeito",
+      "nome_medicamento": "Oxaliplatina",
+      "principios_ativos": "Oxaliplatina",
+      "codigo_atc": "L01XA",
+      "acao_adotada": "Sem alteração da dose",
+      "posologia": "101MG, CÍCLICA",
+      "ind_medicamento_no_catalogo": 1,
+      "categoria_regulatoria": "Genérico",
+      "classe_terapeutica": "CITOSTATICOS ALQUILANTES",
+      "empresa_detentora_registro": "GLENMARK FARMACÊUTICA LTDA",
+      "ind_registro_ativo": 1
+    }
+  ]
+}

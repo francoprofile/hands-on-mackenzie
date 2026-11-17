@@ -1,0 +1,160 @@
+{
+  "tabela": "anvisa.b_dados_abertos_medicamentos",
+  "dicionario_de_dados": [
+    {
+      "coluna": "TIPO_PRODUTO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "NOME_PRODUTO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 20441,
+      "quantidade_nulos": 1
+    },
+    {
+      "coluna": "DATA_FINALIZACAO_PROCESSO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4822,
+      "quantidade_nulos": 109
+    },
+    {
+      "coluna": "CATEGORIA_REGULATORIA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 12,
+      "quantidade_nulos": 9382
+    },
+    {
+      "coluna": "NUMERO_REGISTRO_PRODUTO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 34328,
+      "quantidade_nulos": 21514
+    },
+    {
+      "coluna": "DATA_VENCIMENTO_REGISTRO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 574,
+      "quantidade_nulos": 15370
+    },
+    {
+      "coluna": "NUMERO_PROCESSO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 32366,
+      "quantidade_nulos": 21406
+    },
+    {
+      "coluna": "CLASSE_TERAPEUTICA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 508,
+      "quantidade_nulos": 26079
+    },
+    {
+      "coluna": "EMPRESA_DETENTORA_REGISTRO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 868,
+      "quantidade_nulos": 1
+    },
+    {
+      "coluna": "SITUACAO_REGISTRO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 1
+    },
+    {
+      "coluna": "PRINCIPIO_ATIVO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 6607,
+      "quantidade_nulos": 32122
+    },
+    {
+      "coluna": "_data_ingestao",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "_arquivo_origem",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    }
+  ],
+  "amostra_dados": [
+    {
+      "TIPO_PRODUTO": "MEDICAMENTO",
+      "NOME_PRODUTO": "BIENN DIRECT",
+      "DATA_FINALIZACAO_PROCESSO": "29/04/2019",
+      "CATEGORIA_REGULATORIA": "Similar",
+      "NUMERO_REGISTRO_PRODUTO": "104400222",
+      "DATA_VENCIMENTO_REGISTRO": "042029",
+      "NUMERO_PROCESSO": "25351630408201899",
+      "CLASSE_TERAPEUTICA": "ANTIEMETICOS E ANTINAUSEANTES",
+      "EMPRESA_DETENTORA_REGISTRO": "33173097000274 - CELLERA FARMACEUTICA S.A.",
+      "SITUACAO_REGISTRO": "Inativo",
+      "PRINCIPIO_ATIVO": "cloridrato  de ondansetrona di-hidratado, cloridrato de ondansetrona",
+      "_data_ingestao": "2026-11-15 14:53:19.627308",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/DADOS_ABERTOS_MEDICAMENTOS.csv"
+    },
+    {
+      "TIPO_PRODUTO": "MEDICAMENTO",
+      "NOME_PRODUTO": "BIMAPROST",
+      "DATA_FINALIZACAO_PROCESSO": "20/03/2017",
+      "CATEGORIA_REGULATORIA": "Similar",
+      "NUMERO_REGISTRO_PRODUTO": "102351197",
+      "DATA_VENCIMENTO_REGISTRO": "032027",
+      "NUMERO_PROCESSO": "25351531692201650",
+      "CLASSE_TERAPEUTICA": "ANTIGLAUCOMATOSOS",
+      "EMPRESA_DETENTORA_REGISTRO": "57507378000365 - EMS S/A",
+      "SITUACAO_REGISTRO": "Inativo",
+      "PRINCIPIO_ATIVO": "bimatoprosta",
+      "_data_ingestao": "2026-11-15 14:53:19.627308",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/DADOS_ABERTOS_MEDICAMENTOS.csv"
+    },
+    {
+      "TIPO_PRODUTO": "MEDICAMENTO",
+      "NOME_PRODUTO": "BOLDOVITA",
+      "DATA_FINALIZACAO_PROCESSO": "11/06/2003",
+      "CATEGORIA_REGULATORIA": "Fitoterápico",
+      "NUMERO_REGISTRO_PRODUTO": "154000039",
+      "DATA_VENCIMENTO_REGISTRO": "062028",
+      "NUMERO_PROCESSO": "25351000540200395",
+      "CLASSE_TERAPEUTICA": null,
+      "EMPRESA_DETENTORA_REGISTRO": "56646953000186 - LABORATÓRIO VITALAB LTDA",
+      "SITUACAO_REGISTRO": "Inativo",
+      "PRINCIPIO_ATIVO": "peumus boldus molina",
+      "_data_ingestao": "2026-11-15 14:53:19.627308",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/DADOS_ABERTOS_MEDICAMENTOS.csv"
+    },
+    {
+      "TIPO_PRODUTO": "MEDICAMENTO",
+      "NOME_PRODUTO": "BUSONID",
+      "DATA_FINALIZACAO_PROCESSO": "21/01/2019",
+      "CATEGORIA_REGULATORIA": "Novo",
+      "NUMERO_REGISTRO_PRODUTO": "105730590",
+      "DATA_VENCIMENTO_REGISTRO": "092035",
+      "NUMERO_PROCESSO": "25351693827201831",
+      "CLASSE_TERAPEUTICA": "GLICOCORTICOIDES TOP. SIMP. EXC. USO OFTALM.",
+      "EMPRESA_DETENTORA_REGISTRO": "60659463002992 - ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A",
+      "SITUACAO_REGISTRO": "Inativo",
+      "PRINCIPIO_ATIVO": "budesonida",
+      "_data_ingestao": "2026-11-15 14:53:19.627308",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/DADOS_ABERTOS_MEDICAMENTOS.csv"
+    },
+    {
+      "TIPO_PRODUTO": "MEDICAMENTO",
+      "NOME_PRODUTO": "BUSONID",
+      "DATA_FINALIZACAO_PROCESSO": "16/05/2002",
+      "CATEGORIA_REGULATORIA": "Novo",
+      "NUMERO_REGISTRO_PRODUTO": "112130173",
+      "DATA_VENCIMENTO_REGISTRO": "092020",
+      "NUMERO_PROCESSO": "250000039869481",
+      "CLASSE_TERAPEUTICA": "GLICOCORTICOIDES TOP. SIMP. EXC. USO OFTALM.",
+      "EMPRESA_DETENTORA_REGISTRO": "53162095000106 - BIOSINTÉTICA FARMACÊUTICA LTDA",
+      "SITUACAO_REGISTRO": "Inativo",
+      "PRINCIPIO_ATIVO": "budesonida",
+      "_data_ingestao": "2026-11-15 14:53:19.627308",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/DADOS_ABERTOS_MEDICAMENTOS.csv"
+    }
+  ]
+}

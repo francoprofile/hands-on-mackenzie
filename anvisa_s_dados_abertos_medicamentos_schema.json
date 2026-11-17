@@ -1,0 +1,193 @@
+{
+  "tabela": "anvisa.s_dados_abertos_medicamentos",
+  "dicionario_de_dados": [
+    {
+      "coluna": "tipo_produto",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "nome_produto",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 20312,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "categoria_regulatoria",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 12,
+      "quantidade_nulos": 1834
+    },
+    {
+      "coluna": "numero_registro_produto",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 34328,
+      "quantidade_nulos": 7448
+    },
+    {
+      "coluna": "numero_processo",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 32366,
+      "quantidade_nulos": 7340
+    },
+    {
+      "coluna": "classe_terapeutica",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 513,
+      "quantidade_nulos": 8212
+    },
+    {
+      "coluna": "cnpj_empresa_detentora",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 826,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "empresa_detentora_registro",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 821,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "situacao_registro",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "ind_registro_ativo",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "principio_ativo",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 6675,
+      "quantidade_nulos": 10860
+    },
+    {
+      "coluna": "data_finalizacao_processo",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 5338,
+      "quantidade_nulos": 116
+    },
+    {
+      "coluna": "data_vencimento_registro",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 530,
+      "quantidade_nulos": 3931
+    },
+    {
+      "coluna": "ind_vencimento_so_mes",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 3931
+    },
+    {
+      "coluna": "dt_ingestao_bronze",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "dt_processamento_silver",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    }
+  ],
+  "amostra_dados": [
+    {
+      "tipo_produto": "MEDICAMENTO",
+      "nome_produto": "LOTAR",
+      "categoria_regulatoria": "Novo",
+      "numero_registro_produto": "105730577",
+      "numero_processo": "25351689328201840",
+      "classe_terapeutica": "ANTI-HIPERTENSIVOS-ASSOCIACOES MEDICAMENTOSAS",
+      "cnpj_empresa_detentora": "60659463002992",
+      "empresa_detentora_registro": "ACHÉ LABORATÓRIOS FARMACÊUTICOS S.A",
+      "situacao_registro": "Ativo",
+      "ind_registro_ativo": true,
+      "principio_ativo": "besilato de anlodipino, losartana potássica",
+      "data_finalizacao_processo": "2019-01-14",
+      "data_vencimento_registro": "2028-07-01",
+      "ind_vencimento_so_mes": true,
+      "dt_ingestao_bronze": "2026-11-15 14:53:19.627308",
+      "dt_processamento_silver": "2026-11-15 15:37:15.383762"
+    },
+    {
+      "tipo_produto": "MEDICAMENTO",
+      "nome_produto": "MAXSULID",
+      "categoria_regulatoria": "Novo",
+      "numero_registro_produto": "103940456",
+      "numero_processo": "250000057519721",
+      "classe_terapeutica": "ANTINFLAMATORIOS",
+      "cnpj_empresa_detentora": "61150819000120",
+      "empresa_detentora_registro": "LABORATÓRIO AMERICANO DE FARMACOTERAPIA S/A",
+      "situacao_registro": "Inativo",
+      "ind_registro_ativo": false,
+      "principio_ativo": "nimesulida betaciclodextrina",
+      "data_finalizacao_processo": "1998-06-29",
+      "data_vencimento_registro": "2013-06-01",
+      "ind_vencimento_so_mes": true,
+      "dt_ingestao_bronze": "2026-11-15 14:53:19.627308",
+      "dt_processamento_silver": "2026-11-15 15:37:15.383762"
+    },
+    {
+      "tipo_produto": "MEDICAMENTO",
+      "nome_produto": "TIBOLONA",
+      "categoria_regulatoria": "Genérico",
+      "numero_registro_produto": "126750257",
+      "numero_processo": "25351409019201634",
+      "classe_terapeutica": "OUTROS PRODUTOS PARA USO EM GINECOLOGIA E OBSTETRICIA",
+      "cnpj_empresa_detentora": "72593791000111",
+      "empresa_detentora_registro": "NOVA QUIMICA FARMACÊUTICA S/A",
+      "situacao_registro": "Inativo",
+      "ind_registro_ativo": false,
+      "principio_ativo": "tibolona",
+      "data_finalizacao_processo": "2017-01-09",
+      "data_vencimento_registro": "2027-01-01",
+      "ind_vencimento_so_mes": true,
+      "dt_ingestao_bronze": "2026-11-15 14:53:19.627308",
+      "dt_processamento_silver": "2026-11-15 15:37:15.383762"
+    },
+    {
+      "tipo_produto": "MEDICAMENTO",
+      "nome_produto": "NICORETTE",
+      "categoria_regulatoria": null,
+      "numero_registro_produto": "157210008",
+      "numero_processo": "25351266267200793",
+      "classe_terapeutica": "ANTITABAGICO",
+      "cnpj_empresa_detentora": "59748988000114",
+      "empresa_detentora_registro": "KENVUE LTDA.",
+      "situacao_registro": "Inativo",
+      "ind_registro_ativo": false,
+      "principio_ativo": "nicotina",
+      "data_finalizacao_processo": "2008-03-31",
+      "data_vencimento_registro": "2019-05-01",
+      "ind_vencimento_so_mes": true,
+      "dt_ingestao_bronze": "2026-11-15 14:53:19.627308",
+      "dt_processamento_silver": "2026-11-15 15:37:15.383762"
+    },
+    {
+      "tipo_produto": "MEDICAMENTO",
+      "nome_produto": "VALSARTANA + BESILATO DE ANLODIPINO",
+      "categoria_regulatoria": "Genérico",
+      "numero_registro_produto": "105830770",
+      "numero_processo": "25351447509201214",
+      "classe_terapeutica": "ANTI-HIPERTENSIVOS-ASSOCIACOES MEDICAMENTOSAS",
+      "cnpj_empresa_detentora": "45992062000165",
+      "empresa_detentora_registro": "GERMED FARMACEUTICA LTDA",
+      "situacao_registro": "Inativo",
+      "ind_registro_ativo": false,
+      "principio_ativo": "valsartana, besilato de anlodipino",
+      "data_finalizacao_processo": "2013-11-25",
+      "data_vencimento_registro": "2018-11-01",
+      "ind_vencimento_so_mes": true,
+      "dt_ingestao_bronze": "2026-11-15 14:53:19.627308",
+      "dt_processamento_silver": "2026-11-15 15:37:15.383762"
+    }
+  ]
+}

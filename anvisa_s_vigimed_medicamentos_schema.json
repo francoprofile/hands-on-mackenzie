@@ -1,0 +1,367 @@
+{
+  "tabela": "anvisa.s_vigimed_medicamentos",
+  "dicionario_de_dados": [
+    {
+      "coluna": "id_notificacao",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 386765,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "relacao_medicamento_evento",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 1188
+    },
+    {
+      "coluna": "nome_medicamento",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 14497,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "principios_ativos",
+      "tipo_de_dado": "array<string>",
+      "valores_distintos_aprox": 5129,
+      "quantidade_nulos": 636
+    },
+    {
+      "coluna": "codigos_atc",
+      "tipo_de_dado": "array<string>",
+      "valores_distintos_aprox": 1820,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "detentor_registro",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 11693,
+      "quantidade_nulos": 522024
+    },
+    {
+      "coluna": "concentracao",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 14254,
+      "quantidade_nulos": 569579
+    },
+    {
+      "coluna": "componente_suspeito",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 9,
+      "quantidade_nulos": 614450
+    },
+    {
+      "coluna": "acao_adotada",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 6,
+      "quantidade_nulos": 335145
+    },
+    {
+      "coluna": "problemas_adicionais",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 130,
+      "quantidade_nulos": 662619
+    },
+    {
+      "coluna": "indicacao_meddra",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 14063,
+      "quantidade_nulos": 393676
+    },
+    {
+      "coluna": "indicacao_relatada",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 71616,
+      "quantidade_nulos": 394308
+    },
+    {
+      "coluna": "dose_texto",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 12536,
+      "quantidade_nulos": 415521
+    },
+    {
+      "coluna": "dose_valor",
+      "tipo_de_dado": "decimal(18,4)",
+      "valores_distintos_aprox": 7091,
+      "quantidade_nulos": 415562
+    },
+    {
+      "coluna": "dose_unidade",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 241,
+      "quantidade_nulos": 420762
+    },
+    {
+      "coluna": "frequencia_dose",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1810,
+      "quantidade_nulos": 469784
+    },
+    {
+      "coluna": "posologia",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 167739,
+      "quantidade_nulos": 332067
+    },
+    {
+      "coluna": "duracao_texto",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1686,
+      "quantidade_nulos": 584267
+    },
+    {
+      "coluna": "duracao_dias",
+      "tipo_de_dado": "decimal(18,4)",
+      "valores_distintos_aprox": 1456,
+      "quantidade_nulos": 584338
+    },
+    {
+      "coluna": "data_inicio_administracao",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 5270,
+      "quantidade_nulos": 363936
+    },
+    {
+      "coluna": "ind_inicio_incompleta",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 363931
+    },
+    {
+      "coluna": "data_fim_administracao",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 3808,
+      "quantidade_nulos": 491502
+    },
+    {
+      "coluna": "ind_fim_incompleta",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 491498
+    },
+    {
+      "coluna": "ind_fim_anterior_inicio",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "forma_farmaceutica",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4504,
+      "quantidade_nulos": 483833
+    },
+    {
+      "coluna": "via_administracao",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2258,
+      "quantidade_nulos": 491092
+    },
+    {
+      "coluna": "via_administracao_mae_pai",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 16,
+      "quantidade_nulos": 688708
+    },
+    {
+      "coluna": "numero_lote",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 87504,
+      "quantidade_nulos": 474376
+    },
+    {
+      "coluna": "dt_ingestao_bronze",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "dt_processamento_silver",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    }
+  ],
+  "amostra_dados": [
+    {
+      "id_notificacao": "BR-ANVISA-300204511",
+      "relacao_medicamento_evento": "Suspeito",
+      "nome_medicamento": "Albumina",
+      "principios_ativos": [
+        "Albumina humana"
+      ],
+      "codigos_atc": [
+        "B05AA"
+      ],
+      "detentor_registro": null,
+      "concentracao": "20%",
+      "componente_suspeito": null,
+      "acao_adotada": "Retirada do medicamento",
+      "problemas_adicionais": null,
+      "indicacao_meddra": null,
+      "indicacao_relatada": null,
+      "dose_texto": "10",
+      "dose_valor": "10.0000",
+      "dose_unidade": null,
+      "frequencia_dose": "24 hora",
+      "posologia": "10g 1 x ao dia",
+      "duracao_texto": null,
+      "duracao_dias": null,
+      "data_inicio_administracao": null,
+      "ind_inicio_incompleta": null,
+      "data_fim_administracao": null,
+      "ind_fim_incompleta": null,
+      "ind_fim_anterior_inicio": false,
+      "forma_farmaceutica": null,
+      "via_administracao": "IV",
+      "via_administracao_mae_pai": null,
+      "numero_lote": "E04G041301",
+      "dt_ingestao_bronze": "2026-11-15 14:53:47.408956",
+      "dt_processamento_silver": "2026-11-15 15:36:53.516680"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300204517",
+      "relacao_medicamento_evento": "Suspeito",
+      "nome_medicamento": "Dipirona",
+      "principios_ativos": [
+        "Dipirona"
+      ],
+      "codigos_atc": [
+        "N02BB"
+      ],
+      "detentor_registro": "farmace",
+      "concentracao": null,
+      "componente_suspeito": null,
+      "acao_adotada": "Sem alteração da dose",
+      "problemas_adicionais": null,
+      "indicacao_meddra": null,
+      "indicacao_relatada": "analgesia",
+      "dose_texto": null,
+      "dose_valor": null,
+      "dose_unidade": null,
+      "frequencia_dose": null,
+      "posologia": "Concentração|1g||Dose|",
+      "duracao_texto": "1 dia",
+      "duracao_dias": "1.0000",
+      "data_inicio_administracao": "2023-07-27",
+      "ind_inicio_incompleta": false,
+      "data_fim_administracao": "2023-07-27",
+      "ind_fim_incompleta": false,
+      "ind_fim_anterior_inicio": false,
+      "forma_farmaceutica": null,
+      "via_administracao": null,
+      "via_administracao_mae_pai": null,
+      "numero_lote": "DP22M445",
+      "dt_ingestao_bronze": "2026-11-15 14:53:47.408956",
+      "dt_processamento_silver": "2026-11-15 15:36:53.516680"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300204560",
+      "relacao_medicamento_evento": "Concomitante",
+      "nome_medicamento": "Difenidramina",
+      "principios_ativos": [
+        "Cloridrato de difenidramina"
+      ],
+      "codigos_atc": [
+        "D04AA"
+      ],
+      "detentor_registro": null,
+      "concentracao": null,
+      "componente_suspeito": null,
+      "acao_adotada": null,
+      "problemas_adicionais": null,
+      "indicacao_meddra": null,
+      "indicacao_relatada": "Reverter RAM",
+      "dose_texto": null,
+      "dose_valor": null,
+      "dose_unidade": null,
+      "frequencia_dose": null,
+      "posologia": null,
+      "duracao_texto": null,
+      "duracao_dias": null,
+      "data_inicio_administracao": null,
+      "ind_inicio_incompleta": null,
+      "data_fim_administracao": null,
+      "ind_fim_incompleta": null,
+      "ind_fim_anterior_inicio": false,
+      "forma_farmaceutica": null,
+      "via_administracao": null,
+      "via_administracao_mae_pai": null,
+      "numero_lote": null,
+      "dt_ingestao_bronze": "2026-11-15 14:53:47.408956",
+      "dt_processamento_silver": "2026-11-15 15:36:53.516680"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300204574",
+      "relacao_medicamento_evento": "Suspeito",
+      "nome_medicamento": "Revlimid",
+      "principios_ativos": [
+        "Lenalidomida"
+      ],
+      "codigos_atc": [
+        "L01XX"
+      ],
+      "detentor_registro": null,
+      "concentracao": null,
+      "componente_suspeito": null,
+      "acao_adotada": "Não aplicável",
+      "problemas_adicionais": null,
+      "indicacao_meddra": "Mieloma múltiplo",
+      "indicacao_relatada": null,
+      "dose_texto": "25 milligram (mg)",
+      "dose_valor": "25.0000",
+      "dose_unidade": "milligram (mg)",
+      "frequencia_dose": "21 dia",
+      "posologia": null,
+      "duracao_texto": null,
+      "duracao_dias": null,
+      "data_inicio_administracao": null,
+      "ind_inicio_incompleta": null,
+      "data_fim_administracao": null,
+      "ind_fim_incompleta": null,
+      "ind_fim_anterior_inicio": false,
+      "forma_farmaceutica": null,
+      "via_administracao": null,
+      "via_administracao_mae_pai": null,
+      "numero_lote": "A2817AA",
+      "dt_ingestao_bronze": "2026-11-15 14:53:47.408956",
+      "dt_processamento_silver": "2026-11-15 15:36:53.516680"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300204628",
+      "relacao_medicamento_evento": "Suspeito",
+      "nome_medicamento": "Kisqali",
+      "principios_ativos": [
+        "Succinato de ribociclibe"
+      ],
+      "codigos_atc": [
+        "L01EF"
+      ],
+      "detentor_registro": "NOVARTIS SECTOR: PHARMA",
+      "concentracao": null,
+      "componente_suspeito": null,
+      "acao_adotada": "Redução da dose",
+      "problemas_adicionais": null,
+      "indicacao_meddra": "Neoplasia maligna da mama",
+      "indicacao_relatada": "Malignant neoplasm of the breast/ Breast malignant neoplasm",
+      "dose_texto": null,
+      "dose_valor": null,
+      "dose_unidade": null,
+      "frequencia_dose": null,
+      "posologia": "UNK",
+      "duracao_texto": null,
+      "duracao_dias": null,
+      "data_inicio_administracao": "2023-05-19",
+      "ind_inicio_incompleta": false,
+      "data_fim_administracao": null,
+      "ind_fim_incompleta": null,
+      "ind_fim_anterior_inicio": false,
+      "forma_farmaceutica": "Tablet",
+      "via_administracao": "Unknown",
+      "via_administracao_mae_pai": null,
+      "numero_lote": "SHLN9",
+      "dt_ingestao_bronze": "2026-11-15 14:53:47.408956",
+      "dt_processamento_silver": "2026-11-15 15:36:53.516680"
+    }
+  ]
+}

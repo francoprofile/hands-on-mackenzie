@@ -1,0 +1,358 @@
+{
+  "tabela": "anvisa.b_vigimed_notificacoes",
+  "dicionario_de_dados": [
+    {
+      "coluna": "UF",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 34,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "TIPO_ENTRADA_VIGIMED",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "RECEBIDO_DE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 7,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "IDENTIFICACAO_NOTIFICACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 384839,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "DATA_INCLUSAO_SISTEMA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2976,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "DATA_ULTIMA_ATUALIZACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2979,
+      "quantidade_nulos": 33382
+    },
+    {
+      "coluna": "DATA_NOTIFICACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 3526,
+      "quantidade_nulos": 209489
+    },
+    {
+      "coluna": "TIPO_NOTIFICACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "NOTIFICACAO_PARENT_CHILD",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 33466
+    },
+    {
+      "coluna": "DATA_NASCIMENTO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 33712,
+      "quantidade_nulos": 128588
+    },
+    {
+      "coluna": "IDADE_MOMENTO_REACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 176,
+      "quantidade_nulos": 75012
+    },
+    {
+      "coluna": "GRUPO_IDADE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 8,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "IDADE_GESTACIONAL_MOMENTO_REACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 54,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "SEXO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "GESTANTE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "LACTANTE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "PESO_KG",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 970,
+      "quantidade_nulos": 33246
+    },
+    {
+      "coluna": "ALTURA_CM",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 239,
+      "quantidade_nulos": 33456
+    },
+    {
+      "coluna": "REACAO_EVENTO_ADVERSO_MEDDRA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 134421,
+      "quantidade_nulos": 33327
+    },
+    {
+      "coluna": "GRAVE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 8,
+      "quantidade_nulos": 33278
+    },
+    {
+      "coluna": "GRAVIDADE",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4071,
+      "quantidade_nulos": 117789
+    },
+    {
+      "coluna": "DESFECHO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 14198,
+      "quantidade_nulos": 55329
+    },
+    {
+      "coluna": "DATA_INICIO_HORA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4851,
+      "quantidade_nulos": 143738
+    },
+    {
+      "coluna": "DATA_FINAL_HORA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 4061,
+      "quantidade_nulos": 236738
+    },
+    {
+      "coluna": "DURACAO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 913,
+      "quantidade_nulos": 272659
+    },
+    {
+      "coluna": "RELACAO_MEDICAMENTO_EVENTO",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 5,
+      "quantidade_nulos": 33264
+    },
+    {
+      "coluna": "NOME_MEDICAMENTO_WHODRUG",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 70303,
+      "quantidade_nulos": 33273
+    },
+    {
+      "coluna": "ACAO_ADOTADA",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 2093,
+      "quantidade_nulos": 58322
+    },
+    {
+      "coluna": "NOTIFICADOR",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 6,
+      "quantidade_nulos": 33272
+    },
+    {
+      "coluna": "_data_ingestao",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "_arquivo_origem",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    }
+  ],
+  "amostra_dados": [
+    {
+      "UF": "SP",
+      "TIPO_ENTRADA_VIGIMED": "Empresas Farmacêuticas",
+      "RECEBIDO_DE": "Empresa Farmacêutica",
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300212656",
+      "DATA_INCLUSAO_SISTEMA": "09/28/2023 00:00:00.000000",
+      "DATA_ULTIMA_ATUALIZACAO": "09/28/2023 00:00:00.000000",
+      "DATA_NOTIFICACAO": null,
+      "TIPO_NOTIFICACAO": "Notificação espontânea",
+      "NOTIFICACAO_PARENT_CHILD": "None",
+      "DATA_NASCIMENTO": "01/31/1990 00:00:00.000000",
+      "IDADE_MOMENTO_REACAO": "34.000000000000000",
+      "GRUPO_IDADE": "None",
+      "IDADE_GESTACIONAL_MOMENTO_REACAO": "None",
+      "SEXO": "Feminino",
+      "GESTANTE": "Não ",
+      "LACTANTE": "Não ",
+      "PESO_KG": "68.000000000000000",
+      "ALTURA_CM": "165.000000000000000",
+      "REACAO_EVENTO_ADVERSO_MEDDRA": "Hemiparesia",
+      "GRAVE": "Sim",
+      "GRAVIDADE": "Outro efeito clinicamente significativo",
+      "DESFECHO": "Recuperado/Resolvido com sequelas",
+      "DATA_INICIO_HORA": "20210125",
+      "DATA_FINAL_HORA": "20210206",
+      "DURACAO": "12 dia",
+      "RELACAO_MEDICAMENTO_EVENTO": "Concomitante",
+      "NOME_MEDICAMENTO_WHODRUG": "Tamisa|Aerolin|Fluir|CoronaVac",
+      "ACAO_ADOTADA": "Não aplicável",
+      "NOTIFICADOR": "Médico",
+      "_data_ingestao": "2026-11-15 14:54:37.146193",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Notificacoes.csv"
+    },
+    {
+      "UF": "SP",
+      "TIPO_ENTRADA_VIGIMED": "Empresas Farmacêuticas",
+      "RECEBIDO_DE": "Empresa Farmacêutica",
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300208322",
+      "DATA_INCLUSAO_SISTEMA": "09/01/2023 00:00:00.000000",
+      "DATA_ULTIMA_ATUALIZACAO": "09/01/2023 00:00:00.000000",
+      "DATA_NOTIFICACAO": null,
+      "TIPO_NOTIFICACAO": "Notificação espontânea",
+      "NOTIFICACAO_PARENT_CHILD": "None",
+      "DATA_NASCIMENTO": null,
+      "IDADE_MOMENTO_REACAO": null,
+      "GRUPO_IDADE": "None",
+      "IDADE_GESTACIONAL_MOMENTO_REACAO": "None",
+      "SEXO": "Feminino",
+      "GESTANTE": "Não ",
+      "LACTANTE": "Não ",
+      "PESO_KG": "0.000000000000000",
+      "ALTURA_CM": "0.000000000000000",
+      "REACAO_EVENTO_ADVERSO_MEDDRA": "Cefaleia|Gestação|Hemorragia|Dor abdominal",
+      "GRAVE": "Não",
+      "GRAVIDADE": "Outro efeito clinicamente significativo",
+      "DESFECHO": "Desconhecido|Desconhecido|Desconhecido|Desconhecido",
+      "DATA_INICIO_HORA": "20210122",
+      "DATA_FINAL_HORA": null,
+      "DURACAO": null,
+      "RELACAO_MEDICAMENTO_EVENTO": "Suspeito",
+      "NOME_MEDICAMENTO_WHODRUG": "CoronaVac",
+      "ACAO_ADOTADA": "Não aplicável",
+      "NOTIFICADOR": "Consumidor ou outro não profissional de saúde",
+      "_data_ingestao": "2026-11-15 14:54:37.146193",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Notificacoes.csv"
+    },
+    {
+      "UF": "SP",
+      "TIPO_ENTRADA_VIGIMED": "Empresas Farmacêuticas",
+      "RECEBIDO_DE": "Empresa Farmacêutica",
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300214015",
+      "DATA_INCLUSAO_SISTEMA": "10/06/2023 00:00:00.000000",
+      "DATA_ULTIMA_ATUALIZACAO": "10/06/2023 00:00:00.000000",
+      "DATA_NOTIFICACAO": null,
+      "TIPO_NOTIFICACAO": "Notificação espontânea",
+      "NOTIFICACAO_PARENT_CHILD": "None",
+      "DATA_NASCIMENTO": "05/22/1971 00:00:00.000000",
+      "IDADE_MOMENTO_REACAO": "52.000000000000000",
+      "GRUPO_IDADE": "None",
+      "IDADE_GESTACIONAL_MOMENTO_REACAO": "None",
+      "SEXO": "Masculino",
+      "GESTANTE": "Não ",
+      "LACTANTE": "Não ",
+      "PESO_KG": "0.000000000000000",
+      "ALTURA_CM": "0.000000000000000",
+      "REACAO_EVENTO_ADVERSO_MEDDRA": "Nefrolitíase|Polineuropatia",
+      "GRAVE": "Sim",
+      "GRAVIDADE": "Hospitalização/Prolongamento de hospitalização|Hospitalização/Prolongamento de hospitalização, Outro efeito clinicamente significativo",
+      "DESFECHO": "Desconhecido|Desconhecido",
+      "DATA_INICIO_HORA": "20210203",
+      "DATA_FINAL_HORA": null,
+      "DURACAO": null,
+      "RELACAO_MEDICAMENTO_EVENTO": "Concomitante",
+      "NOME_MEDICAMENTO_WHODRUG": "Metformina|CoronaVac",
+      "ACAO_ADOTADA": null,
+      "NOTIFICADOR": "Médico",
+      "_data_ingestao": "2026-11-15 14:54:37.146193",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Notificacoes.csv"
+    },
+    {
+      "UF": "Outro profissional de saúde",
+      "TIPO_ENTRADA_VIGIMED": null,
+      "RECEBIDO_DE": null,
+      "IDENTIFICACAO_NOTIFICACAO": null,
+      "DATA_INCLUSAO_SISTEMA": null,
+      "DATA_ULTIMA_ATUALIZACAO": null,
+      "DATA_NOTIFICACAO": null,
+      "TIPO_NOTIFICACAO": null,
+      "NOTIFICACAO_PARENT_CHILD": null,
+      "DATA_NASCIMENTO": null,
+      "IDADE_MOMENTO_REACAO": null,
+      "GRUPO_IDADE": null,
+      "IDADE_GESTACIONAL_MOMENTO_REACAO": null,
+      "SEXO": null,
+      "GESTANTE": null,
+      "LACTANTE": null,
+      "PESO_KG": null,
+      "ALTURA_CM": null,
+      "REACAO_EVENTO_ADVERSO_MEDDRA": null,
+      "GRAVE": null,
+      "GRAVIDADE": null,
+      "DESFECHO": null,
+      "DATA_INICIO_HORA": null,
+      "DATA_FINAL_HORA": null,
+      "DURACAO": null,
+      "RELACAO_MEDICAMENTO_EVENTO": null,
+      "NOME_MEDICAMENTO_WHODRUG": null,
+      "ACAO_ADOTADA": null,
+      "NOTIFICADOR": null,
+      "_data_ingestao": "2026-11-15 14:54:37.146193",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Notificacoes.csv"
+    },
+    {
+      "UF": "SP",
+      "TIPO_ENTRADA_VIGIMED": "Empresas Farmacêuticas",
+      "RECEBIDO_DE": "Empresa Farmacêutica",
+      "IDENTIFICACAO_NOTIFICACAO": "BR-ANVISA-300345102",
+      "DATA_INCLUSAO_SISTEMA": "07/21/2025 00:00:00.000000",
+      "DATA_ULTIMA_ATUALIZACAO": "07/21/2025 00:00:00.000000",
+      "DATA_NOTIFICACAO": null,
+      "TIPO_NOTIFICACAO": "Notificação espontânea",
+      "NOTIFICACAO_PARENT_CHILD": "None",
+      "DATA_NASCIMENTO": "11/23/1974 00:00:00.000000",
+      "IDADE_MOMENTO_REACAO": "51.000000000000000",
+      "GRUPO_IDADE": "None",
+      "IDADE_GESTACIONAL_MOMENTO_REACAO": "None",
+      "SEXO": "Masculino",
+      "GESTANTE": "Não ",
+      "LACTANTE": "Não ",
+      "PESO_KG": "0.000000000000000",
+      "ALTURA_CM": "0.000000000000000",
+      "REACAO_EVENTO_ADVERSO_MEDDRA": "Choque anafilático",
+      "GRAVE": "Sim",
+      "GRAVIDADE": "Ameaça à vida, Hospitalização/Prolongamento de hospitalização, Outro efeito clinicamente significativo",
+      "DESFECHO": "Desconhecido",
+      "DATA_INICIO_HORA": "20210302",
+      "DATA_FINAL_HORA": null,
+      "DURACAO": null,
+      "RELACAO_MEDICAMENTO_EVENTO": "Suspeito",
+      "NOME_MEDICAMENTO_WHODRUG": "Soro antibotropico (pentavalente)|Soro anticrotalico",
+      "ACAO_ADOTADA": "Desconhecido|Desconhecido",
+      "NOTIFICADOR": "Farmacêutico",
+      "_data_ingestao": "2026-11-15 14:54:37.146193",
+      "_arquivo_origem": "file:/Workspace/Users/marcelofranco@outlook.com.br/hands-on-mackenzie-v2/VigiMed_Notificacoes.csv"
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage[a4paper, margin=2.2cm]{geometry}
+\usepackage{amssymb}  % necessário para \boxtimes (caixa marcada)
+\usepackage{array}    % ADIÇÃO: permite >{\raggedright\arraybackslash} nas colunas p{}
+\usepackage{tikz}     % ADIÇÃO: diagrama de arquitetura (última página)
+\usetikzlibrary{positioning, arrows.meta, fit, backgrounds, shapes.geometric}
+
+\newcommand{\cboxx}{$\boxtimes$} % caixa marcada com X
+
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.6}
+
+% Macro nativa para caixa de seleção vazia
+\newcommand{\cbox}{\leavevmode\vbox{\hrule\hbox{\vrule height 1.6ex \kern 1.6ex \vrule}\hrule}}
+
+% ADIÇÃO: nome de coluna/tabela em fonte monoespaçada
+\newcommand{\var}[1]{\texttt{#1}}
+% ADIÇÃO: tipo de coluna p{} alinhado à esquerda (evita espaços enormes no texto justificado)
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+% ADIÇÃO: cores das camadas usadas no diagrama TikZ
+\definecolor{bronze}{HTML}{B87333}
+\definecolor{prata}{HTML}{8A9199}
+\definecolor{ouro}{HTML}{C9A227}
+\definecolor{azuleda}{HTML}{2A78D6}
+\definecolor{laranjaml}{HTML}{EB6834}
+\definecolor{verdeapp}{HTML}{2A9D8F}
+\definecolor{cinza}{HTML}{5F6B76}
+
+\begin{document}
+
+{\LARGE \textbf{BRIEFING DO PROJETO INTEGRADOR}}
+
+\vspace{4pt}
+\textbf{Disciplina:} Hands-On Fundamentos de Dados e Analytics\\
+\textbf{Módulo 1} -- MBA em Engenharia de Dados -- Universidade Presbiteriana Mackenzie\\
+\textbf{Mentoria:} Prof. Gustavo Ferreira
+
+\vspace{4pt}
+\hrule
+\vspace{8pt}
+
+\section*{1. IDENTIFICAÇÃO DO GRUPO}
+
+\textbf{Nome do Projeto:} Anvisa Analytics \& ML
+
+\textbf{Setor de Atuação:}
+\cbox\ Varejo \quad
+\cboxx\ Saúde \quad
+\cbox\ Finanças \quad
+\cbox\ Logística \quad
+\cbox\ Setor Público \quad
+\cbox\ Outro: \hrulefill
+
+\textbf{Integrantes:}
+
+\vspace{2pt}
+\begin{tabular}{|L{0.34\textwidth}|L{0.30\textwidth}|L{0.27\textwidth}|}
+\hline
+\textbf{Nome completo} & \textbf{E-mail} & \textbf{LinkedIn} \\
+\hline
+Guilherme G. de Moraes & guilmoraes8@gmail.com & linkedin.com/in/guilhermemoraess \\
+\hline
+Marcelo Henrique F. da Silva & marcelofranco@outlook.com.br & linkedin.com/in/mhfranco \\
+\hline
+ & & \\
+\hline
+ & & \\
+\hline
+ & & \\
+\hline
+\end{tabular}
+
+\vspace{6pt}
+\section*{2. DESCRIÇÃO DO PROBLEMA DE NEGÓCIO}
+
+\textbf{2.1 Qual é o problema que vocês pretendem resolver?}\\
+{\small O setor de saúde e regulação sanitária recebe uma alta taxa de notificações de eventos adversos graves a medicamentos que demoram a ser triadas e identificadas manualmente na base de dados da ANVISA.}
+
+\vspace{6pt}
+\textbf{2.2 Qual é o impacto do problema para o negócio?}\\
+{\small A demora na triagem e identificação manual de eventos adversos graves impacta diretamente na segurança dos pacientes e retarda a adoção de medidas regulatórias urgentes pela ANVISA, atrasando a mitigação de riscos críticos à saúde pública.}
+
+\vspace{6pt}
+\section*{3. OBJETIVOS DO PROJETO}
+
+\textbf{3.1 Objetivo Geral:}\\
+{\small Desenvolver um pipeline de dados e um modelo preditivo para identificar notificações de eventos adversos graves a medicamentos na base da ANVISA, subsidiando a priorização de investigações e a mitigação de riscos à saúde pública.}
+
+\vspace{6pt}
+\textbf{3.2 Objetivos Específicos (mínimo 3):}
+\begin{itemize}
+    \item Implementar arquitetura Medallion: Bronze, Silver e Gold.
+    \item Realizar análise exploratória.
+    \item Treinar um modelo preditivo de aprendizado de máquina para classificar se as reações adversas são graves ou não.
+\end{itemize}
+
+\vspace{6pt}
+\section*{4. DADOS UTILIZADOS}
+
+\textbf{4.1 Fonte de Dados:}\\
+% ADIÇÃO: incluído o catálogo de medicamentos registrados, que também alimenta a Gold
+{\small Portal de Dados Abertos da Anvisa: VigiMed\_Notificacoes $|$ VigiMed\_Reacoes $|$ VigiMed\_Medicamentos $|$ Medicamentos registrados (catálogo de registros, cruzado pelo nome do produto).}
+
+\vspace{6pt}
+\textbf{4.2 Descrição da base} {\small (camada Gold: tabela \var{anvisa.g\_vigimed\_obt\_ml})}\textbf{:}
+% PREENCHIDO com a Gold: 1 linha por notificação com rótulo, carga de 15/11/2026
+\begin{itemize}
+    \item Número de registros: \textbf{280.415} notificações (1 linha por \var{id\_notificacao}, sem nulos e sem duplicatas)
+    \item Número de atributos: \textbf{33} colunas (30 variáveis explicativas + \var{id\_notificacao}, alvo \var{ind\_grave} e \var{origem\_ind\_grave}, esta só para auditoria)
+    % CONFERIR: SELECT min(ano_inclusao_sistema), max(ano_inclusao_sistema) FROM anvisa.g_vigimed_obt_ml
+    \item Período coberto: notificações incluídas no VigiMed de \textbf{2018 a 2026} (\var{ano\_inclusao\_sistema}; carga de 15/11/2026)
+\end{itemize}
+
+\textbf{4.3 Principais variáveis:}
+
+\vspace{2pt}
+% ADAPTADO: 4 -> 8 linhas, com variáveis e tipos reais da Gold; fonte menor para caber
+{\small
+\begin{tabular}{|L{0.22\textwidth}|L{0.11\textwidth}|L{0.30\textwidth}|L{0.26\textwidth}|}
+\hline
+\textbf{Nome} & \textbf{Tipo} & \textbf{Significado} & \textbf{Tratamento necessário?} \\
+\hline
+\var{ind\_grave} & INT (0/1) & \textbf{Alvo}: notificação grave (54,2\% graves) & \cboxx\ Sim \quad \cbox\ Não \newline {\footnotesize Nulo deduzido das reações; sem rótulo é excluído} \\
+\hline
+\var{idade\_momento\_\allowbreak reacao} & DOUBLE & Idade do paciente na reação (anos) & \cboxx\ Sim \quad \cbox\ Não \newline {\footnotesize Nulos = mediana (49) + flag \var{idade\_imputada}} \\
+\hline
+\var{sexo} & STRING & Sexo do paciente & \cboxx\ Sim \quad \cbox\ Não \newline {\footnotesize Nulos = \textit{Nao Informado}} \\
+\hline
+\var{reacao\_soc} & STRING & Classe de sistema/órgão (MedDRA) da reação principal & \cboxx\ Sim \quad \cbox\ Não \newline {\footnotesize Top 30 + \textit{Outros}; LLT/PT/HLT/HLGT fora (colineares)} \\
+\hline
+\var{principios\_ativos} & STRING & Princípio(s) ativo(s) (WHODrug) do medicamento principal & \cboxx\ Sim \quad \cbox\ Não \newline {\footnotesize ARRAY $\rightarrow$ texto \textit{A $|$ B}; top 30 + \textit{Outros}} \\
+\hline
+\var{codigo\_atc} & STRING & 1º código ATC do medicamento principal & \cboxx\ Sim \quad \cbox\ Não \newline {\footnotesize Vira \var{atc\_nivel1} (grupo anatômico)} \\
+\hline
+\var{qtd\_reacoes} / \var{qtd\_\allowbreak medicamentos} & INT & Nº de reações e de medicamentos da notificação & \cboxx\ Sim \quad \cbox\ Não \newline {\footnotesize \var{log1p} (contagens assimétricas)} \\
+\hline
+\var{ind\_medicamento\_\allowbreak no\_catalogo} & INT (0/1) & Medicamento casou com o catálogo de registros & \cbox\ Sim \quad \cboxx\ Não \newline {\footnotesize Já sai pronto da Gold} \\
+\hline
+\end{tabular}
+}
+
+\vspace{6pt}
+\section*{5. ARQUITETURA E GOVERNANÇA}
+
+\textbf{5.1 Representação do fluxo de dados (camadas):}\\
+% ADAPTADO: fluxo genérico detalhado com as camadas e ferramentas do projeto
+Ingestão (CSV Anvisa $\rightarrow$ Bronze) $\rightarrow$ Preparação (Silver) $\rightarrow$ Armazenamento (Gold / OBT) $\rightarrow$ Análise e Modelagem (R) $\rightarrow$ Visualização (App Shiny)\\
+{\small Diagrama técnico completo na última página.}
+
+\vspace{4pt}
+\textbf{5.2 Simulação de camadas de dados:}
+
+\vspace{2pt}
+% PREENCHIDO: números apenas da Gold (Bronze e Silver descritas de forma qualitativa)
+{\small
+\begin{tabular}{|L{0.20\textwidth}|L{0.33\textwidth}|L{0.36\textwidth}|}
+\hline
+\textbf{Camada} & \textbf{Formato / ferramenta usada} & \textbf{Exemplo de conteúdo} \\
+\hline
+\textbf{Raw} \newline (Bronze) & CSV do Portal de Dados Abertos $\rightarrow$ tabelas Delta no Databricks & Cópia fiel dos 4 arquivos de origem + coluna de auditoria \var{dt\_ingestao\_bronze} \\
+\hline
+\textbf{Trusted} \newline (Silver) & Delta Lake + Databricks SQL (tipagem, padronização, funções SQL) & \var{s\_vigimed\_notificacoes}, \var{s\_vigimed\_reacoes}, \var{s\_vigimed\_medicamentos}, \var{s\_dados\_abertos\_\allowbreak medicamentos}: datas como DATE, flags BOOLEAN, listas como ARRAY \\
+\hline
+\textbf{Curated / Refined} \newline (Gold) & Delta Lake + Databricks SQL (OBT com CTEs, \var{QUALIFY}, \var{LEFT JOIN}) & \var{g\_vigimed\_obt\_ml}: 280.415 linhas $\times$ 33 colunas, 1 linha por notificação, zero nulos, alvo binário \var{ind\_grave} \\
+\hline
+\end{tabular}
+}
+
+\vspace{6pt}
+\textbf{5.3 Princípios de Governança aplicados:}
+\begin{itemize}
+    \item[\cboxx] Catálogo de dados {\small (schema \var{anvisa}, \var{COMMENT} em tabelas e funções)}
+    \item[\cbox] Políticas de acesso
+    \item[\cboxx] LGPD (simulado) {\small (dados abertos anonimizados; Gold sem data de nascimento e sem CNPJ)}
+    \item[\cbox] Classificação de sensibilidade
+\end{itemize}
+
+\vspace{6pt}
+\section*{6. ANÁLISE EXPLORATÓRIA}
+
+\textbf{6.1 Técnicas utilizadas:}
+\begin{itemize}
+    \item[\cboxx] Estatística descritiva
+    \item[\cboxx] Visualização gráfica
+    \item[\cboxx] Detecção de outliers
+    \item[\cboxx] Correlação entre variáveis
+    \item[\cbox] Análise de sazonalidade / clusterização
+    \item[\cboxx] Outras: {\small Shapiro-Wilk, Wilcoxon + AUC univariada, qui-quadrado + V de Cramér (amostra estratificada de 1.000 linhas)}
+\end{itemize}
+
+\textbf{6.2 Ferramentas utilizadas:}
+\begin{itemize}
+    \item[\cboxx] Python (Pandas / Seaborn / Matplotlib)
+    \item[\cboxx] R {\small (dplyr / rstatix / ggplot2)}
+    \item[\cbox] Power BI
+    \item[\cbox] Tableau
+    \item[\cbox] Google Looker Studio
+    \item[\cbox] AutoML (especifique): \hrulefill
+\end{itemize}
+
+\vspace{6pt}
+\section*{7. MODELAGEM PREDITIVA}
+
+\textbf{7.1 Tipo de problema modelado:}\\
+\cboxx\ Classificação \quad \cbox\ Regressão \quad \cbox\ Agrupamento
+
+\vspace{4pt}
+\textbf{7.2 Algoritmo(s) utilizados:}\\
+% ADAPTADO: os scripts 05/06 treinam três modelos
+\cboxx\ Regressão Logística {\small (Elastic Net)} \quad \cbox\ Árvore de Decisão \quad \cbox\ K-Means \quad \cboxx\ Random Forest\\
+\cboxx\ Outro: XGBoost
+
+\vspace{4pt}
+\textbf{7.3 Métricas utilizadas para validação:}\\
+% ADAPTADO: métricas calculadas no Bloco 4 do script 06
+\cbox\ Accuracy \quad \cboxx\ Precision \quad \cboxx\ Recall \quad \cboxx\ F1 Score \quad \cbox\ MAE \quad \cbox\ RMSE\\
+\cboxx\ Outras: ROC-AUC (critério de escolha) e Especificidade
+
+\vspace{6pt}
+\section*{8. DASHBOARD FINAL}
+
+\textbf{8.1 Ferramenta utilizada:}\\
+\cbox\ Power BI \quad \cbox\ Tableau \quad \cbox\ Looker Studio \quad \cboxx\ Outro: App Shiny (R)
+
+\vspace{4pt}
+\textbf{8.2 Público-alvo do dashboard:}\\
+\cbox\ Diretoria \quad \cbox\ Área de Negócio \quad \cbox\ Stakeholders técnicos \quad \cboxx\ Equipe operacional {\small (triagem)}
+
+\vspace{4pt}
+\textbf{8.3 Principais KPIs apresentados:}
+
+\vspace{2pt}
+% PREENCHIDO: todos os valores vêm da Gold (g_vigimed_obt_ml)
+{\small
+\begin{tabular}{|L{0.20\textwidth}|L{0.28\textwidth}|L{0.16\textwidth}|L{0.25\textwidth}|}
+\hline
+\textbf{KPI} & \textbf{Descrição} & \textbf{Valor atual} & \textbf{Meta ou insight} \\
+\hline
+Volume de notificações & Notificações com rótulo na Gold (1 linha por notificação) & 280.415 & Base do treino (80\%) e teste (20\%), divisão estratificada \\
+\hline
+Taxa de eventos graves & \% de notificações com \var{ind\_grave} = 1 & 54,2\% & Classes balanceadas (54/46): dispensa SMOTE e \textit{class weight} \\
+\hline
+Rótulos deduzidos & Alvo vindo das reações (\var{origem\_ind\_grave} = \textit{reacoes}) & 2.184 (0,8\%) & Avaliar o modelo nas linhas de origem \textit{notificacao} \\
+\hline
+Idade não informada & \% de idades imputadas pela mediana (49 anos) & 11,7\% & Flag \var{idade\_imputada} entra no modelo \\
+\hline
+Graves com óbito & Taxa de graves entre desfecho \textit{Fatal/Óbito} & 98\% & \var{desfecho} fica fora do modelo (vazamento do alvo) \\
+\hline
+\end{tabular}
+}
+
+\vspace{6pt}
+\section*{9. DOCUMENTAÇÃO E APRESENTAÇÃO FINAL}
+
+\textbf{9.1 Repositório GitHub do projeto (link):}
+
+\vspace{12pt}
+\hrulefill
+
+\vspace{6pt}
+\textbf{9.2 Componentes do repositório:}
+\begin{itemize}
+    \item[\cbox] README com visão geral
+    \item[\cboxx] Código-fonte (Python, SQL, etc.) {\small (Databricks SQL: Silver/Gold; R: EDA, modelagem e app)}
+    \item[\cboxx] Notebook técnico
+    \item[\cbox] Slides de apresentação
+    \item[\cbox] Artefatos complementares (ex: JSON, CSV, etc.)
+\end{itemize}
+
+\textbf{9.3 Observações e aprendizados do grupo:}\\
+{\small \textit{Destaque os desafios enfrentados, decisões importantes e o que aprenderam com o projeto.}}
+
+\vspace{18pt}
+\hrulefill
+
+\vspace{14pt}
+\hrulefill
+
+\vspace{14pt}
+\hrulefill
+
+% =====================================================================
+% ADIÇÃO: DIAGRAMA DE ARQUITETURA TÉCNICA (TikZ) - página exclusiva, a última
+% Fluxo: Fontes -> Ingestão (Bronze -> Silver -> Gold) -> EDA -> Modelo de ML -> App
+% =====================================================================
+\clearpage
+\thispagestyle{empty}
+
+\section*{10. DIAGRAMA DE ARQUITETURA TÉCNICA}
+
+\vspace{4pt}
+\begin{center}
+\begin{tikzpicture}[
+    font=\sffamily\small,
+    >={Stealth[length=3mm]},
+    seta/.style={->, very thick, draw=black!65},
+    % caixa genérica: título em negrito na 1ª linha, detalhes abaixo
+    caixa/.style={draw=#1, fill=#1!12, very thick, rounded corners=4pt,
+                  align=center, inner sep=6pt},
+    camada/.style={caixa=#1, text width=4.0cm, minimum height=4.2cm},
+    etapa/.style={caixa=#1, text width=13.6cm},
+    grupo/.style={draw=black!45, dashed, rounded corners=8pt, inner sep=10pt},
+    rotulo/.style={font=\sffamily\footnotesize\bfseries, text=black!60}
+]
+
+% ---------- Fontes ----------
+\node[etapa=cinza] (fontes) {
+    \textbf{FONTES -- Portal de Dados Abertos da Anvisa (CSV)}\\[2pt]
+    VigiMed\_Notificacoes \;$|$\; VigiMed\_Reacoes \;$|$\; VigiMed\_Medicamentos \;$|$\; Medicamentos registrados
+};
+
+% ---------- Ingestão: Bronze -> Silver -> Gold ----------
+\node[camada=prata, below=1.9cm of fontes] (silver) {
+    \textbf{\large SILVER}\\ \textit{Trusted}\\[4pt]
+    Tipagem e padronização\\ DATE, BOOLEAN, ARRAY\\[4pt]
+    4 tabelas \texttt{s\_*}\\ (notificações, reações, medicamentos, catálogo)
+};
+\node[camada=bronze, left=1.0cm of silver] (bronze) {
+    \textbf{\large BRONZE}\\ \textit{Raw}\\[4pt]
+    Tabelas Delta\\ cópia fiel dos CSV\\[4pt]
+    + \texttt{dt\_ingestao\_bronze}\\ (auditoria)
+};
+\node[camada=ouro, right=1.0cm of silver] (gold) {
+    \textbf{\large GOLD}\\ \textit{Curated / OBT}\\[4pt]
+    \texttt{g\_vigimed\_obt\_ml}\\[2pt]
+    280.415 linhas $\times$ 33 col.\\
+    1 linha / notificação\\ zero nulos\\
+    alvo \texttt{ind\_grave} (54,2\%)
+};
+
+\draw[seta] (bronze) -- (silver);
+\draw[seta] (silver) -- (gold);
+
+% moldura da etapa de ingestão (desenhada atrás das caixas)
+\begin{scope}[on background layer]
+    \node[grupo, fit=(bronze)(silver)(gold), label={[rotulo, anchor=south west]north west:INGESTÃO -- Databricks SQL + Delta Lake (arquitetura Medallion)}] (ingestao) {};
+\end{scope}
+
+\draw[seta] (fontes.south) -- (ingestao.north)
+    node[midway, right, font=\sffamily\footnotesize] {carga dos CSV};
+
+% ---------- EDA ----------
+\node[etapa=azuleda, below=1.3cm of ingestao] (eda) {
+    \textbf{ANÁLISE EXPLORATÓRIA DE DADOS (EDA)} -- R: dplyr, rstatix, ggplot2\\[3pt]
+    Amostra estratificada de 5.000 linhas \;$\cdot$\; Shapiro-Wilk \;$\cdot$\; Wilcoxon + AUC univariada\\
+    Qui-quadrado + V de Cramér \;$\cdot$\; taxa de graves por categoria \;$\cdot$\; detecção de vazamento (\texttt{desfecho})
+};
+\draw[seta] (ingestao.south) -- (eda.north)
+    node[midway, right, font=\sffamily\footnotesize] {CSV da Gold};
+
+% ---------- Modelo de ML ----------
+\node[etapa=laranjaml, below=1.2cm of eda] (ml) {
+    \textbf{MODELO DE MACHINE LEARNING} -- R: xgboost, glmnet, ranger, doParallel\\[3pt]
+    Treino/teste 80/20 estratificado \;$\cdot$\; top 30 categorias + \textit{Outros} \;$\cdot$\; one-hot esparso (\texttt{dgCMatrix})\\
+    Tuning com validação cruzada (3 folds) \;$\cdot$\; escolha pelo ROC-AUC\\[3pt]
+    \begin{tabular}{@{}c@{\hspace{0.8cm}}c@{\hspace{0.8cm}}c@{}}
+        \fbox{XGBoost} & \fbox{Elastic Net (logística)} & \fbox{Random Forest}
+    \end{tabular}\\[3pt]
+    Métricas no teste: ROC-AUC, F1, Recall, Precisão, Especificidade \;$\cdot$\; importância por permutação
+};
+\draw[seta] (eda) -- (ml)
+    node[midway, right, font=\sffamily\footnotesize] {seleção de variáveis};
+
+% ---------- Consumo ----------
+\node[etapa=verdeapp, below=1.2cm of ml] (app) {
+    \textbf{CONSUMO -- App Shiny (R)}\\[2pt]
+    Formulário com as variáveis mais importantes $\rightarrow$ probabilidade de \textit{Grave} (corte 0,5) $\rightarrow$ apoio à triagem
+};
+\draw[seta] (ml) -- (app)
+    node[midway, right, font=\sffamily\footnotesize] {modelos \texttt{.rds}};
+
+\end{tikzpicture}
+\end{center}
+
+\vfill
+{\footnotesize Números da camada Gold (\texttt{anvisa.g\_vigimed\_obt\_ml})
+
+\end{document}
+

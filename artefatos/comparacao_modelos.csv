@@ -1,0 +1,4 @@
+"modelo","roc_auc","f1","sensibilidade_recall","especificidade","precisao","auc_validacao","tempo_min"
+"random_forest",0.9505,0.8839,0.8611,0.8966,0.908,NA,14.0013
+"xgboost",0.9497,0.887,0.875,0.8839,0.8994,0.9503,4.739
+"elasticnet",0.9176,0.8597,0.8354,0.8719,0.8854,0.9197,4.4251

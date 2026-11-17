@@ -1,0 +1,219 @@
+{
+  "tabela": "anvisa.s_vigimed_reacoes",
+  "dicionario_de_dados": [
+    {
+      "coluna": "id_notificacao",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 397507,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_llt",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 19302,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_pt",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 9908,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_hlt",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1325,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_hlgt",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 330,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "reacao_soc",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 28,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "data_inicio",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 4368,
+      "quantidade_nulos": 453804
+    },
+    {
+      "coluna": "ind_data_inicio_incompleta",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 453803
+    },
+    {
+      "coluna": "data_fim",
+      "tipo_de_dado": "date",
+      "valores_distintos_aprox": 3590,
+      "quantidade_nulos": 724754
+    },
+    {
+      "coluna": "ind_data_fim_incompleta",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 724752
+    },
+    {
+      "coluna": "ind_data_fim_anterior_inicio",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "duracao_texto",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 1106,
+      "quantidade_nulos": 855740
+    },
+    {
+      "coluna": "duracao_dias",
+      "tipo_de_dado": "decimal(18,4)",
+      "valores_distintos_aprox": 896,
+      "quantidade_nulos": 855913
+    },
+    {
+      "coluna": "ind_grave",
+      "tipo_de_dado": "boolean",
+      "valores_distintos_aprox": 2,
+      "quantidade_nulos": 204799
+    },
+    {
+      "coluna": "gravidade_criterios",
+      "tipo_de_dado": "array<string>",
+      "valores_distintos_aprox": 56,
+      "quantidade_nulos": 700924
+    },
+    {
+      "coluna": "desfecho",
+      "tipo_de_dado": "string",
+      "valores_distintos_aprox": 6,
+      "quantidade_nulos": 159641
+    },
+    {
+      "coluna": "dt_ingestao_bronze",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    },
+    {
+      "coluna": "dt_processamento_silver",
+      "tipo_de_dado": "timestamp",
+      "valores_distintos_aprox": 1,
+      "quantidade_nulos": 0
+    }
+  ],
+  "amostra_dados": [
+    {
+      "id_notificacao": "BR-ANVISA-300189238",
+      "reacao_llt": "Hematoma",
+      "reacao_pt": "Hematoma",
+      "reacao_hlt": "Hemorragias NCO",
+      "reacao_hlgt": "Distúrbios vasculares hemorrágicos",
+      "reacao_soc": "Distúrbios vasculares",
+      "data_inicio": "2019-05-03",
+      "ind_data_inicio_incompleta": false,
+      "data_fim": "2019-05-03",
+      "ind_data_fim_incompleta": false,
+      "ind_data_fim_anterior_inicio": false,
+      "duracao_texto": null,
+      "duracao_dias": null,
+      "ind_grave": false,
+      "gravidade_criterios": null,
+      "desfecho": "Recuperado/Resolvido",
+      "dt_ingestao_bronze": "2026-11-15 14:55:28.183086",
+      "dt_processamento_silver": "2026-11-15 15:36:32.480660"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300189241",
+      "reacao_llt": "Pressão arterial aumentada",
+      "reacao_pt": "Pressão arterial aumentada",
+      "reacao_hlt": "Exames vasculares NCO (incl. pressão arterial)",
+      "reacao_hlgt": "Investigações cardíacas e vasculares (excl. exames enzimáticos)",
+      "reacao_soc": "Investigações",
+      "data_inicio": null,
+      "ind_data_inicio_incompleta": null,
+      "data_fim": null,
+      "ind_data_fim_incompleta": null,
+      "ind_data_fim_anterior_inicio": false,
+      "duracao_texto": null,
+      "duracao_dias": null,
+      "ind_grave": false,
+      "gravidade_criterios": null,
+      "desfecho": "Não Recuperado/Não Resolvido/Em andamento",
+      "dt_ingestao_bronze": "2026-11-15 14:55:28.183086",
+      "dt_processamento_silver": "2026-11-15 15:36:32.480660"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300189248",
+      "reacao_llt": "Agitação",
+      "reacao_pt": "Agitação",
+      "reacao_hlt": "Sintomas de ansiedade",
+      "reacao_hlgt": "Transtornos e sintomas de ansiedade",
+      "reacao_soc": "Distúrbios psiquiátricos",
+      "data_inicio": null,
+      "ind_data_inicio_incompleta": null,
+      "data_fim": null,
+      "ind_data_fim_incompleta": null,
+      "ind_data_fim_anterior_inicio": false,
+      "duracao_texto": null,
+      "duracao_dias": null,
+      "ind_grave": true,
+      "gravidade_criterios": [
+        "Hospitalização/Prolongamento de hospitalização"
+      ],
+      "desfecho": "Desconhecido",
+      "dt_ingestao_bronze": "2026-11-15 14:55:28.183086",
+      "dt_processamento_silver": "2026-11-15 15:36:32.480660"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300189261",
+      "reacao_llt": "Cefaleia",
+      "reacao_pt": "Cefaleia",
+      "reacao_hlt": "Cefaleias NCO",
+      "reacao_hlgt": "Cefaleias",
+      "reacao_soc": "Distúrbios do sistema nervoso",
+      "data_inicio": "2023-01-01",
+      "ind_data_inicio_incompleta": true,
+      "data_fim": "2023-03-01",
+      "ind_data_fim_incompleta": true,
+      "ind_data_fim_anterior_inicio": false,
+      "duracao_texto": "59 dia",
+      "duracao_dias": "59.0000",
+      "ind_grave": false,
+      "gravidade_criterios": null,
+      "desfecho": "Recuperado/Resolvido",
+      "dt_ingestao_bronze": "2026-11-15 14:55:28.183086",
+      "dt_processamento_silver": "2026-11-15 15:36:32.480660"
+    },
+    {
+      "id_notificacao": "BR-ANVISA-300189262",
+      "reacao_llt": "Parto prematuro",
+      "reacao_pt": "Parto prematuro",
+      "reacao_hlt": "Anormalidades no início e na duração do trabalho de parto",
+      "reacao_hlgt": "Complicações maternas do trabalho de parto e parto",
+      "reacao_soc": "Quadros clínicos na gravidez, no puerpério e perinatais",
+      "data_inicio": "2021-04-06",
+      "ind_data_inicio_incompleta": false,
+      "data_fim": null,
+      "ind_data_fim_incompleta": null,
+      "ind_data_fim_anterior_inicio": false,
+      "duracao_texto": null,
+      "duracao_dias": null,
+      "ind_grave": true,
+      "gravidade_criterios": [
+        "Hospitalização/Prolongamento de hospitalização"
+      ],
+      "desfecho": "Recuperado/Resolvido",
+      "dt_ingestao_bronze": "2026-11-15 14:55:28.183086",
+      "dt_processamento_silver": "2026-11-15 15:36:32.480660"
+    }
+  ]
+}
